@@ -1,0 +1,44 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Georgia, 'Times New Roman', serif;
+    padding: 25px;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    border: 3px double #555;
+    background-color: white;
+}
+
+.title-box {
+    text-align: center;
+    font-size: 38px;
+    padding: 18px;
+    border-bottom: 3px double #555;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 220px 280px 280px 1fr;
+}
+
+.grid div {
+    border: 3px double #555;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.header div {
+    font-weight: bold;
+    background-color: #efefef;
+    min-height: 70px;
+}
+
+.row div {
+    min-height: 90px;
+}
