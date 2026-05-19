@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    background: white;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: black;
+}
+
+.page {
+    width: 900px;
+    margin: 30px auto;
+}
+
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 860px;
+    height: 390px;
+    margin: 5px auto;
+    border: 2px solid #333;
+}
+
+.story-card {
+    border-right: 2px solid #333;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.story-card:last-child {
+    border-right: none;
+}
+
+.story-card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.story-card span {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 8px 15px;
+}
+
+.story-card:hover img {
+    opacity: 1;
+}
+
+.story-card:hover span {
+    transform: scale(1.1);
+}
+
+.story-page {
+    width: 700px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.story-page img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border: 2px solid #333;
+}
+
+.story-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: 2px solid #333;
+    color: black;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background: black;
+    color: white;
+}
